@@ -17,7 +17,7 @@ class enemyBullet(object):
         #设置显示在那个窗口对象中
         self.screen=screen
         # 图片读取
-        self.image=pygame.image.load('./feiji/子弹.png')
+        self.image=pygame.image.load('./feiji/子弹1.png')
         pass
     def display(self):
         '''
@@ -39,7 +39,7 @@ class enemyBullet(object):
         判断子弹是否越界
         :return:
         '''
-        if self.y>=350:
+        if self.y>=500-39:
             return True
         else:
             return False

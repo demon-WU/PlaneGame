@@ -65,6 +65,10 @@ def main():
         hero.display()
         #设定敌机显示
         enemyPlane.display()
+        #设定敌机的移动
+        enemyPlane.move()
+        #设定敌机发射子弹
+        enemyPlane.shootEnemyBullet()
         #设定键盘事件
         keyboardControl(hero)
         # 设定刷新窗口，让子弹和飞机动起来
