@@ -3,8 +3,8 @@ import pygame  #导入pygame包
 #导入包中所有的东西
 from pygame.locals import *
 
+from 敌机 import EnemyPlane
 from 飞机 import HeroPlane
-
 #键盘控制函数
 
 def keyboardControl(HeroObj):
@@ -54,12 +54,17 @@ def main():
     pygame.mixer.music.play(-1)
     #设定飞机模型
     hero=HeroPlane(screen)
+    #设定敌机模型
+    enemyPlane=EnemyPlane(screen)
     while True:
 
         # 设定窗口背景居中显示
         screen.blit(background,(0,0))
+
         #设定飞机位置
         hero.display()
+        #设定敌机显示
+        enemyPlane.display()
         #设定键盘事件
         keyboardControl(hero)
         # 设定刷新窗口，让子弹和飞机动起来
