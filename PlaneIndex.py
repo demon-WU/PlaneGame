@@ -26,7 +26,7 @@ def keyboardControl(HeroObj):
                 pass
             elif event.key == K_SPACE:
                 print('发射子弹')
-                HeroObj.shootbullet()
+                HeroObj.shootBullet()
                 pass
 
 def main():
